@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: todo
+    name: be-todo
     env: docker
     dockerfilePath: JetsuenThinley_02250350_DSO101_A1\Backend\Dockerfile
     envVars:
@@ -10,7 +10,7 @@ services:
         value: 5000
 
   - type: web
-    name: todo
+    name: fe-todo
     env: docker
     dockerfilePath: JetsuenThinley_02250350_DSO101_A1\Frontend\Dockerfile
     envVars:
