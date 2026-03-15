@@ -10,7 +10,7 @@ https://github.com/iamjetsuenthinley/DSO101-Continuous-Integration-and-Continuou
 
 1\. Project Setup
 
-!\[step1.1](JetsuenThinley\_02250350\_DSO101\_A1/Screenshots/Screenshot 2026-03-15 171418.png)
+!\[step1.1](JetsuenThinley_02250350_DSO101_A1/Screenshots/Screenshot 2026-03-15 171408.png)
 
 !\[step1.2](JetsuenThinley\_02250350\_DSO101\_A1\\Screenshots\\Screenshot 2026-03-15 171408.png)
 
