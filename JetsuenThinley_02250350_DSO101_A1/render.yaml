@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: be-todo
+    env: docker
+    dockerfilePath: ./Backend/Dockerfile
+    envVars:
+      - key: DB_HOST
+        value: localhost
+      - key: PORT
+        value: 5000
+
+  - type: web
+    name: fe-todo
+    env: docker
+    dockerfilePath: ./Frontend/Dockerfile
+    envVars:
+      - key: API_URL
+        value: https://be-todo
