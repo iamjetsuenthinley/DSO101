@@ -9,7 +9,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     url: 'https://github.com/iamjetsuenthinley/DSO101.git',
-                    credentialsId: 'github-creds'
+                    credentialsId: '5b343e20-8e3e-4321-be03-1f15c12019ba'
             }
         }
 
@@ -44,11 +44,16 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                script {
-                    docker.build('yourdockerhubusername/todo-app:latest')
-                    docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-creds') {
-                        docker.image('yourdockerhubusername/todo-app:latest').push()
-                    }
+                withCredentials([usernamePassword(
+                    credentialsId: 'docker-hub-creds',
+                    usernameVariable: 'DOCKER_USER',
+                    passwordVariable: 'DOCKER_PASS'
+                )]) {
+                    bat 'docker login -u %DOCKER_USER% -p %DOCKER_PASS%'
+                    bat 'docker build -t %DOCKER_USER%/todo-app-backend:latest -f JetsuenThinley_02250350_DSO101_A1\\todo-app\\backend\\Dockerfile JetsuenThinley_02250350_DSO101_A1\\todo-app'
+                    bat 'docker build -t %DOCKER_USER%/todo-app-frontend:latest JetsuenThinley_02250350_DSO101_A1\\todo-app\\frontend'
+                    bat 'docker push %DOCKER_USER%/todo-app-backend:latest'
+                    bat 'docker push %DOCKER_USER%/todo-app-frontend:latest'
                 }
             }
         }
