@@ -15,25 +15,25 @@ pipeline {
 
         stage('Install Backend') {
             steps {
-                sh 'cd JetsuenThinley_02250350_DSO101_A1/todo-app/backend && npm install'
+                bat 'cd JetsuenThinley_02250350_DSO101_A1\\todo-app\\backend && npm install'
             }
         }
 
         stage('Install Frontend') {
             steps {
-                sh 'cd JetsuenThinley_02250350_DSO101_A1/todo-app/frontend && npm install'
+                bat 'cd JetsuenThinley_02250350_DSO101_A1\\todo-app\\frontend && npm install'
             }
         }
 
         stage('Build Frontend') {
             steps {
-                sh 'cd JetsuenThinley_02250350_DSO101_A1/todo-app/frontend && npm run build'
+                bat 'cd JetsuenThinley_02250350_DSO101_A1\\todo-app\\frontend && npm run build'
             }
         }
 
         stage('Test Backend') {
             steps {
-                sh 'cd JetsuenThinley_02250350_DSO101_A1/todo-app/backend && npm test'
+                bat 'cd JetsuenThinley_02250350_DSO101_A1\\todo-app\\backend && npm test'
             }
             post {
                 always {
@@ -45,9 +45,9 @@ pipeline {
         stage('Deploy') {
             steps {
                 script {
-                    docker.build('jetsuenthinley/todo-app:latest')
+                    docker.build('yourdockerhubusername/todo-app:latest')
                     docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-creds') {
-                        docker.image('jetsuenthinley/todo-app:latest').push()
+                        docker.image('yourdockerhubusername/todo-app:latest').push()
                     }
                 }
             }
