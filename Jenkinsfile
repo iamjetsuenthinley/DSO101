@@ -49,11 +49,11 @@ pipeline {
                     usernameVariable: 'DOCKER_USER',
                     passwordVariable: 'DOCKER_PASS'
                 )]) {
-                    bat 'docker login -u %DOCKER_USER% -p %DOCKER_PASS%'
-                    bat 'docker build -t %DOCKER_USER%/todo-app-backend:latest -f JetsuenThinley_02250350_DSO101_A1\\todo-app\\backend\\Dockerfile JetsuenThinley_02250350_DSO101_A1\\todo-app'
-                    bat 'docker build -t %DOCKER_USER%/todo-app-frontend:latest JetsuenThinley_02250350_DSO101_A1\\todo-app\\frontend'
-                    bat 'docker push %DOCKER_USER%/todo-app-backend:latest'
-                    bat 'docker push %DOCKER_USER%/todo-app-frontend:latest'
+                    bat 'docker login -u jetsuenthinley -p iamgonnabecomeaking@1424'
+                    bat 'docker build -t jetsuenthinley/todo-app-backend:latest -f JetsuenThinley_02250350_DSO101_A1\\todo-app\\backend\\Dockerfile JetsuenThinley_02250350_DSO101_A1\\todo-app'
+                    bat 'docker build -t jetsuenthinley/todo-app-frontend:latest JetsuenThinley_02250350_DSO101_A1\\todo-app\\frontend'
+                    bat 'docker push jetsuenthinley/todo-app-backend:latest'
+                    bat 'docker push jetsuenthinley/todo-app-frontend:latest'
                 }
             }
         }
