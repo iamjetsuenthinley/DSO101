@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="7" failures="0" errors="0" time="0.714">
+  <testsuite name="Tasks API" errors="0" failures="0" skipped="0" timestamp="2026-06-01T18:04:21" time="0.635" tests="7">
+    <testcase classname="Tasks API GET /tasks - should return all tasks" name="Tasks API GET /tasks - should return all tasks" time="0.034">
+    </testcase>
+    <testcase classname="Tasks API POST /tasks - should create a new task" name="Tasks API POST /tasks - should create a new task" time="0.015">
+    </testcase>
+    <testcase classname="Tasks API POST /tasks - should reject empty title" name="Tasks API POST /tasks - should reject empty title" time="0.007">
+    </testcase>
+    <testcase classname="Tasks API PUT /tasks/:id - should update a task" name="Tasks API PUT /tasks/:id - should update a task" time="0.006">
+    </testcase>
+    <testcase classname="Tasks API PUT /tasks/:id - should return 404 if task not found" name="Tasks API PUT /tasks/:id - should return 404 if task not found" time="0.005">
+    </testcase>
+    <testcase classname="Tasks API DELETE /tasks/:id - should delete a task" name="Tasks API DELETE /tasks/:id - should delete a task" time="0.005">
+    </testcase>
+    <testcase classname="Tasks API DELETE /tasks/:id - should return 404 if not found" name="Tasks API DELETE /tasks/:id - should return 404 if not found" time="0.004">
+    </testcase>
+  </testsuite>
+</testsuites>

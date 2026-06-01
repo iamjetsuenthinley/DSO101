@@ -60,3 +60,5 @@ if (require.main === module) {
     console.log(`🚀 Backend server is running at http://localhost:${PORT}`);
   });
 }
+
+module.exports = app;
