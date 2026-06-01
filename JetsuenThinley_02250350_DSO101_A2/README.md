@@ -15,10 +15,10 @@ Installed Jenkins from jenkins.io and accessed it on localhost:8080. Installed t
 
 Configured Node.js under Manage Jenkins → Tools → NodeJS and added LTS v20.x.
 
-![alt text](SSs/Screenshot 2026-06-02 000948.png)
-![alt text](SSs/Screenshot 2026-06-02 001024.png)
-![alt text](SSs/Screenshot 2026-06-02 001040.png)
-![alt text](SSs/Screenshot 2026-06-02 001052.png)
+![alt text](SSs/img3)
+![alt text](SSs/img4)
+![alt text](SSs/img5)
+![alt text](SSs/img6)
 
 ---
 
