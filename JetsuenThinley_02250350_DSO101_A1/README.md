@@ -1,7 +1,7 @@
 # DSO101 Assignment 1 - CI/CD Todo App
 
 **Name:** Jetsuen Thinley 
-**Student ID:** 02240350
+**Student ID:** 02250350
 
 ---
 
