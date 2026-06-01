@@ -55,8 +55,8 @@ app.get('/health', (req, res) => {
 // Use the PORT from the .env file, or fall back to 5000
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
-  console.log(`🚀 Backend server is running at http://localhost:${PORT}`);
-});
-
-module.exports = app; // Export the app for testing purposes
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`🚀 Backend server is running at http://localhost:${PORT}`);
+  });
+}
