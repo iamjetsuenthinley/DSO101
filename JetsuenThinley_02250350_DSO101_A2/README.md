@@ -48,6 +48,9 @@ A `Jenkinsfile` was created in the root of the repository with the following sta
 
 ## Task 4: Running the Pipeline
 
+![alt text](img8.png)
+![alt text](img9.png)
+![alt text](img7.png)
 
 
 ---
