@@ -9,7 +9,7 @@
 
 Verified that the GitHub repository was public and that the `package.json` file contained the necessary scripts for building and testing the application.
 
-(![alt text](SSs/img2.png.png))
+(![alt text](SSs/img2.png))
 
 ---
 
@@ -33,9 +33,9 @@ Created a `.github/workflows/deploy.yml` file in the repository. The workflow wa
 GitHub Secrets were added for DockerHub credentials and the Render deployment webhook URL. No credentials were hardcoded in the code.
 
 
-![alt text](SSs/Screenshot 2026-06-02 001646.png)
+![alt text](SSs/img5.png)
 
-![alt text](SSs/Screenshot 2026-06-02 001710.1.png)
+![alt text](SSs/img6.png)
 
 ---
 
